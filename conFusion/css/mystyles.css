@@ -33,6 +33,20 @@ body{
     z-index:0;
 }
 
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.my-navbar-text {
+    color: white;
+}
+
 .navbar-inverse {
     background: #303F9F;
 }
