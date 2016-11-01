@@ -45,6 +45,7 @@ body{
 
 .my-navbar-text {
     color: white;
+    font-weight: normal;
 }
 
 .navbar-inverse {
