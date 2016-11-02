@@ -38,6 +38,9 @@ body{
     vertical-align: middle;
     float: none;
 }
+.affix {
+    top:100px;
+}
 .vertical-align {
     display: flex;
     align-items: center;
