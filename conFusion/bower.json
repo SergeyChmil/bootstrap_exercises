@@ -1,0 +1,25 @@
+{
+  "name": "confusion",
+  "description": "Testing project",
+  "main": "index.html",
+  "authors": [
+    "Serhii Chmil"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "confusion",
+    "restaurant"
+  ],
+  "homepage": "https://github.com/SergeyChmil/bootstrap_exercises",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}
