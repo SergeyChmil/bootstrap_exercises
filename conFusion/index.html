@@ -29,7 +29,7 @@
 
 <!-------------------- MODALS --------------------->
 
-<div id="loginModal" class="modal fade" role="dialog">
+    <div id="loginModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
@@ -54,7 +54,7 @@
     </div>
 </div>
 
-<div id="reserveTableModal" class="modal fade" role="dialog">
+    <div id="reserveTableModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
         <!-- Modal content -->
         <div class="modal-content">
@@ -127,7 +127,7 @@
 <!-------------------- END OF MODALS ------------------->
 
 
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -167,9 +167,7 @@
                     <a href="contactus.html"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a data-toggle="modal" data-target="#loginModal">
-                            <span class="glyphicon glyphicon-log-in"></span> Login</a>
-                        </li>
+                        <li><a id="navLogin"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                     </ul>
                 </div>
             </div>
@@ -192,7 +190,7 @@
                 <div class="col-xs-12 col-sm-2">
                     <p style="padding:40px;"></p>
                     <div class="container vertical-align">
-                        <a type="button" data-toggle="modal" data-target="#reserveTableModal" class="btn btn-warning btn-block">Reserve table</a>
+                        <a id="reserveTableButton" type="button" class="btn btn-warning btn-block">Reserve table</a>
                     </div>
                 </div>
             </div>
@@ -397,6 +395,12 @@
             });
             $("#carousel-play").click(function(){
                 $("#mycarousel").carousel('cycle');
+            });
+            $("#navLogin").click(function () {
+                $("#loginModal").modal("show");
+            });
+            $("#reserveTableButton").click(function () {
+                $("#reserveTableModal").modal("show");
             });
         });
     </script>
